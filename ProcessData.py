@@ -11,7 +11,7 @@ def getID(info):
   initial = str.lower(info[0][0])
   last = str.lower(info[1])
   while len(last) < 5:
-    last = last+"x"
+    last = last+"X"
   number = info[3][-3:]
 
   return initial + last + number
