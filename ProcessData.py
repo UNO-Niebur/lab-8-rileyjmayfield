@@ -44,7 +44,7 @@ def main():
   #Open the files we will be using
   inFile = open("names.dat", 'r')
   outFile = open("StudentList.csv", 'w')
-
+  outFile.write("Last Name" + "," + "First Name" + "," + "UserID" + "," + "Major-Year" + "\n")
   #Process each line of the input file and output to the CSV file
   for line in inFile:
     info = line.split(" ")
